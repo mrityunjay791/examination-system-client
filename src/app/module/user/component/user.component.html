@@ -1,0 +1,94 @@
+
+<!--<a routerLink="">home</a>-->
+<div class="container-fluid">
+  <button class="btn-navigation">
+    <span class="fa fa-home" routerLink=""></span>
+  </button>
+  <div class="row">
+    <div class="col-md-1 col-xs-12"></div>
+    <div class="col-md-9 col-xs-12">
+    <div class="row login-screen text-center">
+      <div class="login-quote clear-padding col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+        <span>We will help you to learn..!!</span>
+      </div>
+      <div class="login-wrapper clear-padding col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1">
+        <!-- Login Container -->
+        <div class="form-placeholder col-lg-7 col-md-7 col-sm-12 col-xs-12">
+          <div class="form-heading text-center">User Login</div>
+          <form>
+            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12 col-lg-offset-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-2">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="text" [(ngModel)]="userDetails.userName" name="user-email" class="form-control animated-input" required="required">
+                  <span>Email</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-12 col-lg-offset-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-2">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group">
+                  <input type="password" [(ngModel)]="userDetails.password" name="login-password" class="form-control animated-input" required="required">
+                  <span>Password</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-2">
+              <input class="btn-theme-primary" type="submit" (click)="checkCredential()" value="Login" />
+            </div>
+          </form>
+          <div class="forgot-pass-wrapper col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a routerLink="">home</a>
+          </div>
+        </div>
+
+        <!-- Services container -->
+        <div class="login-services-wrapper clear-padding col-lg-5 col-md-5 sol-sm-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="services-heading text-center">Get access to</h3>
+          </div>
+          <div class="services-pellet col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="service-icon-wrapper col-lg-3 col-md-3 col-xs-3">
+              <span class="fa fa-bookmark"></span>
+            </div>
+            <div class="service-text-wrapper col-lg-9 col-md-9 col-xs-9">
+              <span>Bookmarks</span>
+              <small>Bookmark Courses details etc.</small>
+            </div>
+          </div>
+          <div class="services-pellet col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="service-icon-wrapper col-lg-3 col-md-3 col-xs-3">
+              <span class="fa fa-archive"></span>
+            </div>
+            <div class="service-text-wrapper col-lg-9 col-md-9 col-xs-9">
+              <span>Collections</span>
+              <small>Create your own test series.</small>
+            </div>
+          </div>
+          <div class="services-pellet col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="service-icon-wrapper col-lg-3 col-md-3 col-xs-3">
+              <span class="fa fa-users"></span>
+            </div>
+            <div class="service-text-wrapper col-lg-9 col-md-9 col-xs-9">
+              <span>People</span>
+              <small>Connect with other students..</small>
+            </div>
+          </div>
+          <div class="services-pellet col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="service-icon-wrapper col-lg-3 col-md-3 col-xs-3">
+              <span class="fa fa-glass"></span>
+            </div>
+            <div class="service-text-wrapper col-lg-9 col-md-9 col-xs-9">
+              <span>Your Experience</span>
+              <small>Share your experience through reviews and comments.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer">
+    <!--<span class="masthead">Made with <span class="fa fa-heart"></span> by Sam</span>-->
+  </div>
+  </div>
+  <div class="col-md-2 col-xs-12"></div>
+  <router-outlet></router-outlet>
